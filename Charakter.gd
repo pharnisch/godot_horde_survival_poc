@@ -33,6 +33,11 @@ func _process(delta):
 	self.base_attack(delta)
 	self.base_attack2(delta)
 	self.spawn(delta)
+	self.collision_damage(delta)
+	
+func collision_damage(delta):
+	var overlapping_mobs = %Hurtbox.get_overlapping_bodies()
+	self.get_damage(delta * 5 * overlapping_mobs.size())
 	
 func spawn(delta):
 	self.spawn_timer += delta

@@ -5,7 +5,7 @@ var player_hp = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.player = get_node("/root/Node2D/Charakter")
+	self.player = get_node("/root/World/Charakter")
 	self.player_hp = player.hp
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
