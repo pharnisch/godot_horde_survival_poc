@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://ptekwpin24y0"]
+
+[ext_resource type="Texture2D" uid="uid://dwt6xjysdnudj" path="res://csm_duerre-boden-ausgetrocknet-patagonien-argentinien-WW191953-c-michel-gunther-wwf_dc70a6a1c3.jpg" id="2_1x5ee"]
+[ext_resource type="PackedScene" uid="uid://b3v4upjdmm742" path="res://zombie.tscn" id="3_noehv"]
+[ext_resource type="PackedScene" uid="uid://iot2c7cdeuj2" path="res://charakter.tscn" id="3_oyrvg"]
+[ext_resource type="PackedScene" uid="uid://dtbobx715w63f" path="res://ui.tscn" id="4_2xluh"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -10
+texture = ExtResource("2_1x5ee")
+
+[node name="Zombie" parent="." instance=ExtResource("3_noehv")]
+
+[node name="Charakter" parent="." instance=ExtResource("3_oyrvg")]
+
+[node name="UI" parent="." instance=ExtResource("4_2xluh")]

@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtbobx715w63f"]
+
+[ext_resource type="Theme" uid="uid://delf0innikb3k" path="res://new_theme.tres" id="1_80olk"]
+[ext_resource type="Script" path="res://ui.gd" id="1_mr17q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g46e3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7epcc"]
+bg_color = Color(0.788235, 0.513726, 0.541176, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 51.0
+offset_top = 59.0
+offset_right = 439.0
+offset_bottom = 129.0
+theme = ExtResource("1_80olk")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_g46e3")
+theme_override_styles/fill = SubResource("StyleBoxFlat_7epcc")
+value = 50.0
+script = ExtResource("1_mr17q")
