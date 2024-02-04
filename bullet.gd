@@ -2,6 +2,7 @@ extends RigidBody2D
 
 var destroy_timer = 0
 var destroy_time = 30
+var damage = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

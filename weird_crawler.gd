@@ -4,7 +4,7 @@ var player = null
 
 var move_speed = 120
 
-var hp = 200
+var hp = 10
 
 var collision_dmg = 10
 
@@ -43,7 +43,7 @@ func _on_body_entered(body):
 	#	self.hp -= 100 # dmg from player collision and bullet collision
 	#	self.player.get_damage(10)
 	if "Bullet" in body.name: # Bullet1, Bullet2, Bullet3 ...
-		self.hp -= 100
+		self.hp -= body.damage
 		body.queue_free() # destroy bullet after this collision
 		
 	if self.hp <= 0:

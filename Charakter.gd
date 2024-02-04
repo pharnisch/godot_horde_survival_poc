@@ -25,6 +25,7 @@ const DEG2RAD = PI / 180.0
 var hp = 100
 var score = 0
 var hp_regen_per_second = 3
+var base_damage = 5
 
 var rng = null
 
@@ -132,7 +133,7 @@ func base_attack(delta):
 		
 		# Apply force to move the bullet
 		b.apply_central_impulse(velocity * 500) 
-	
+		b.damage = self.base_damage
 		self.angle += 1
 		
 func base_attack2(delta):
@@ -163,6 +164,9 @@ func base_attack2(delta):
 		b.apply_central_impulse(vel1 * 500) 
 		b2.apply_central_impulse(velocity * 500) 
 		b3.apply_central_impulse(vel3 * 500) 
+		b.damage = self.base_damage
+		b2.damage = self.base_damage
+		b3.damage = self.base_damage
 		
 func base_attack3(delta):
 	self.shoot_timer3 += delta
@@ -185,12 +189,14 @@ func base_attack3(delta):
 			b.transform = self.global_transform
 			var direction = self.global_position.direction_to(closest_enemy.global_position)
 			b.apply_central_impulse(direction * 500) 
+			b.damage = self.base_damage
 
 
 func get_damage(dmg):
 	self.hp -= dmg
-	if self.hp < 0:
+	if self.hp <= 0:
 		self.hp = 0
+		get_tree().paused = true
 
 func add_score(score):
 	self.score += score

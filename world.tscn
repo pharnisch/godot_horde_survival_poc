@@ -19,9 +19,10 @@ texture = ExtResource("2_1x5ee")
 [node name="Charakter" parent="." instance=ExtResource("3_oyrvg")]
 
 [node name="UI" parent="." instance=ExtResource("4_2xluh")]
+visible = false
 
 [node name="Tree" parent="." instance=ExtResource("5_51gdk")]
-position = Vector2(285, -89)
+position = Vector2(-264, -363)
 
 [node name="Tree2" parent="." instance=ExtResource("5_51gdk")]
 position = Vector2(-403, -15)
@@ -30,3 +31,27 @@ position = Vector2(-403, -15)
 position = Vector2(-304, 285)
 
 [node name="WeirdCrawler" parent="." instance=ExtResource("6_c6up2")]
+
+[node name="Tree4" parent="." instance=ExtResource("5_51gdk")]
+position = Vector2(-383, 589)
+
+[node name="Tree5" parent="." instance=ExtResource("5_51gdk")]
+position = Vector2(-383, -270)
+
+[node name="Tree6" parent="." instance=ExtResource("5_51gdk")]
+position = Vector2(-476, -144)
+
+[node name="Tree7" parent="." instance=ExtResource("5_51gdk")]
+position = Vector2(-512, 92)
+
+[node name="Tree8" parent="." instance=ExtResource("5_51gdk")]
+position = Vector2(-585, 244)
+
+[node name="Tree9" parent="." instance=ExtResource("5_51gdk")]
+position = Vector2(-531, 361)
+
+[node name="Tree10" parent="." instance=ExtResource("5_51gdk")]
+position = Vector2(-440, 460)
+
+[node name="Tree11" parent="." instance=ExtResource("5_51gdk")]
+position = Vector2(-581, 146)
