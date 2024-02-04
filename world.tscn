@@ -19,7 +19,6 @@ texture = ExtResource("2_1x5ee")
 [node name="Charakter" parent="." instance=ExtResource("3_oyrvg")]
 
 [node name="UI" parent="." instance=ExtResource("4_2xluh")]
-visible = false
 
 [node name="Tree" parent="." instance=ExtResource("5_51gdk")]
 position = Vector2(-264, -363)

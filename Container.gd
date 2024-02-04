@@ -14,17 +14,30 @@ func _ready():
 func _process(delta):
 	pass
 
-
 func _on_talent_1_pressed():
 	attackRangeCollisionBox.shape.radius *= 1.1
 	self.visible = false
-
+	get_tree().paused = false
 
 func _on_talent_2_pressed():
 	self.player.shoot_cooldown3 *= 0.9
 	self.visible = false
-
+	get_tree().paused = false
 
 func _on_talent_3_pressed():
 	self.player.base_damage *= 1.1
 	self.visible = false
+	get_tree().paused = false
+	
+	
+### TALENT IDEAS:
+## PERMANENT
+# running speed
+# attack range
+# attack speed
+# attack base damage
+#
+## ONE-TIME EFFECT
+# big aoe around character
+# big heal
+# score points

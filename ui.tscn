@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtbobx715w63f"]
+[gd_scene load_steps=9 format=3 uid="uid://dtbobx715w63f"]
 
 [ext_resource type="Theme" uid="uid://delf0innikb3k" path="res://new_theme.tres" id="1_80olk"]
+[ext_resource type="Script" path="res://ui_container.gd" id="1_dyo2s"]
 [ext_resource type="Script" path="res://ui.gd" id="1_mr17q"]
 [ext_resource type="Script" path="res://score_text.gd" id="3_i7o8s"]
 [ext_resource type="Theme" uid="uid://i0emvkjb5k7u" path="res://skill_container.tres" id="4_7nkud"]
@@ -30,6 +31,7 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [node name="UI" type="CanvasLayer"]
+script = ExtResource("1_dyo2s")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = 51.0
@@ -52,6 +54,9 @@ text = "Score: 0"
 script = ExtResource("3_i7o8s")
 
 [node name="TalentBox" type="ColorRect" parent="."]
+unique_name_in_owner = true
+process_mode = 3
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -64,7 +69,7 @@ offset_bottom = 1820.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("4_7nkud")
-color = Color(0, 0, 0, 0.533333)
+color = Color(0, 0, 0, 0.584314)
 script = ExtResource("5_xtsas")
 
 [node name="Talent1" type="Button" parent="TalentBox"]

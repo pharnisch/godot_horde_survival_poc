@@ -24,14 +24,17 @@ const DEG2RAD = PI / 180.0
 
 var hp = 100
 var score = 0
+var score_points_spent = 0
 var hp_regen_per_second = 3
 var base_damage = 5
 
 var rng = null
+var ui = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	self.rng = RandomNumberGenerator.new()
+	self.ui = get_node("/root/World/UI")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -50,7 +53,13 @@ func _process(delta):
 	# HANDLE ENEMY COLLISIONS (currently same damage for every "Hurtbox"-collision (collision layer mask: 3 - enemy))
 	self.collision_damage(delta)
 
+	self.skill()
 	
+func skill():
+	if self.score >= self.score_points_spent + 100:
+		self.score_points_spent += 100
+		self.ui.display_talents()
+		
 func regen(delta):
 	self.hp += delta * self.hp_regen_per_second
 	if self.hp > 100:
