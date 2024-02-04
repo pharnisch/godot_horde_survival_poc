@@ -6,6 +6,8 @@ var move_speed = 100
 
 var hp = 100
 
+var collision_dmg = 5
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	self.player = get_node("/root/World/Charakter")
@@ -13,14 +15,14 @@ func _ready():
 	self.set_contact_monitor(true)
 	self.set_max_contacts_reported(11)
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = self.global_position.direction_to(self.player.global_position)
 	move_and_collide(velocity * self.move_speed * delta)
 
-func _test(body):
-	print(body)
+
+func get_collision_dmg():
+	return self.collision_dmg
 
 func _on_body_entered(body):
 	#if body.name == "Charakter":
