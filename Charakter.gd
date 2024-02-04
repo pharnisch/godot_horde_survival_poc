@@ -191,3 +191,6 @@ func get_damage(dmg):
 	self.hp -= dmg
 	if self.hp < 0:
 		self.hp = 0
+
+func add_score(score):
+	self.score += score

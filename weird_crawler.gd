@@ -48,6 +48,7 @@ func _on_body_entered(body):
 		
 	if self.hp <= 0:
 		self.queue_free() # destroy this zombie
+		self.player.add_score(10)
 	
 func get_damage(dmg):
 	self.hp -= dmg

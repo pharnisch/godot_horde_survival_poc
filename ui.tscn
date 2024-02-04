@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtbobx715w63f"]
+[gd_scene load_steps=6 format=3 uid="uid://dtbobx715w63f"]
 
 [ext_resource type="Theme" uid="uid://delf0innikb3k" path="res://new_theme.tres" id="1_80olk"]
 [ext_resource type="Script" path="res://ui.gd" id="1_mr17q"]
+[ext_resource type="Script" path="res://score_text.gd" id="3_i7o8s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g46e3"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -39,3 +40,11 @@ theme_override_styles/background = SubResource("StyleBoxFlat_g46e3")
 theme_override_styles/fill = SubResource("StyleBoxFlat_7epcc")
 value = 50.0
 script = ExtResource("1_mr17q")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 55.0
+offset_top = 20.0
+offset_right = 189.0
+offset_bottom = 52.0
+text = "Score: 0"
+script = ExtResource("3_i7o8s")
