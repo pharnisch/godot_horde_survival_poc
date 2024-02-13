@@ -5,6 +5,6 @@
 ### Estimating Player Skill
 - Health
 - Score/Time
-- Agony (decreases while enemy live, see "Halls of Torment Agony Mode")
+- Enemy Living Time (decreases while enemy live, see "Halls of Torment Agony Mode")
 
 ### Adapting to Player Skill
