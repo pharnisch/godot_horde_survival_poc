@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://iot2c7cdeuj2"]
+[gd_scene load_steps=8 format=3 uid="uid://iot2c7cdeuj2"]
 
 [ext_resource type="Script" path="res://Charakter.gd" id="1_x1gor"]
 [ext_resource type="Texture2D" uid="uid://cc0mpgpwremof" path="res://icon.svg" id="2_s31gs"]
+[ext_resource type="PackedScene" uid="uid://cxgoncx4fygsp" path="res://enemy_spawn_logic.tscn" id="3_p18xn"]
+[ext_resource type="Script" path="res://WeaponLogic.gd" id="4_w3a8c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bobuh"]
 radius = 75.0
@@ -41,3 +43,8 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRange"]
 shape = SubResource("CircleShape2D_leq00")
+
+[node name="EnemySpawnLogic" parent="." instance=ExtResource("3_p18xn")]
+
+[node name="WeaponLogic" type="Node2D" parent="."]
+script = ExtResource("4_w3a8c")

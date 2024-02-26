@@ -10,7 +10,7 @@ func _ready():
 	self.player_score = player.hp
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	if self.player.score != self.player_score:
 		self.player_score = self.player.score
 	

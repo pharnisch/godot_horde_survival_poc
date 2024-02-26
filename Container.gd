@@ -11,7 +11,7 @@ func _ready():
 			attackRangeCollisionBox = child.get_child(0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	pass
 
 func _on_talent_1_pressed():
@@ -20,12 +20,12 @@ func _on_talent_1_pressed():
 	get_tree().paused = false
 
 func _on_talent_2_pressed():
-	self.player.shoot_cooldown3 *= 0.9
+	self.player.get_node("WeaponLogic").shoot_cooldown3 *= 0.9
 	self.visible = false
 	get_tree().paused = false
 
 func _on_talent_3_pressed():
-	self.player.base_damage *= 1.1
+	self.player.get_node("WeaponLogic").base_damage *= 1.1
 	self.visible = false
 	get_tree().paused = false
 	

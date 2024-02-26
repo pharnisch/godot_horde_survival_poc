@@ -23,7 +23,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	self.running_timer += delta
 	if self.running_timer >= running_time:
 		self.running_timer -= running_time

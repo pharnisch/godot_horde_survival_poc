@@ -16,7 +16,7 @@ func _ready():
 	self.set_max_contacts_reported(11)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	var velocity = self.global_position.direction_to(self.player.global_position)
 	move_and_collide(velocity * self.move_speed * delta)
 
