@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmkvpemvfj0b3"]
 
-[ext_resource type="Texture2D" uid="uid://8trrspg0xtms" path="res://vecteezy_simple-tree-icon_12665403.jpg" id="1_nk3vu"]
+[ext_resource type="Texture2D" uid="uid://8trrspg0xtms" path="res://images/vecteezy_simple-tree-icon_12665403.jpg" id="1_nk3vu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jyn7y"]
 radius = 50.0

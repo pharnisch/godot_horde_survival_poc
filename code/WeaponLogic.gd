@@ -1,7 +1,7 @@
 extends Node2D
 
 
-var Bullet = load("res://bullet.tscn")
+var Bullet = load("res://scenes/bullet.tscn")
 var shoot_timer = 0
 var shoot_cooldown = 0.5
 var shoot_timer2 = 0

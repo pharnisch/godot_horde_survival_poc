@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8trrspg0xtms"
-path="res://.godot/imported/vecteezy_simple-tree-icon_12665403.jpg-6d5fa5d4eb0f09c365a605f98f7b903b.ctex"
+uid="uid://cc0mpgpwremof"
+path="res://.godot/imported/icon.svg-40d11009b022ae281956dc38e8f8d85e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vecteezy_simple-tree-icon_12665403.jpg"
-dest_files=["res://.godot/imported/vecteezy_simple-tree-icon_12665403.jpg-6d5fa5d4eb0f09c365a605f98f7b903b.ctex"]
+source_file="res://images/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-40d11009b022ae281956dc38e8f8d85e.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

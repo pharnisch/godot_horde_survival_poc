@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Adaptive_Horde_Survival_POC"
-run/main_scene="res://world.tscn"
+run/main_scene="res://scenes/world.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://images/icon.svg"
 
 [dotnet]
 

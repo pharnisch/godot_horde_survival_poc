@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c7lpp3k7s8chk"]
 
-[ext_resource type="Script" path="res://weird_crawler.gd" id="1_cs2or"]
-[ext_resource type="Texture2D" uid="uid://cc0mpgpwremof" path="res://icon.svg" id="1_iv0am"]
+[ext_resource type="Texture2D" uid="uid://cc0mpgpwremof" path="res://images/icon.svg" id="1_iv0am"]
+[ext_resource type="Script" path="res://code/weird_crawler.gd" id="1_l71ck"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qfj2g"]
 radius = 75.0
@@ -9,7 +9,7 @@ radius = 75.0
 [node name="WeirdCrawler" type="RigidBody2D"]
 collision_layer = 4
 collision_mask = 3
-script = ExtResource("1_cs2or")
+script = ExtResource("1_l71ck")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.945098, 0.0901961, 0.623529, 1)

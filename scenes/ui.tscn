@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://dtbobx715w63f"]
 
-[ext_resource type="Theme" uid="uid://delf0innikb3k" path="res://new_theme.tres" id="1_80olk"]
-[ext_resource type="Script" path="res://ui_container.gd" id="1_dyo2s"]
-[ext_resource type="Script" path="res://ui.gd" id="1_mr17q"]
-[ext_resource type="Script" path="res://score_text.gd" id="3_i7o8s"]
-[ext_resource type="Theme" uid="uid://i0emvkjb5k7u" path="res://skill_container.tres" id="4_7nkud"]
-[ext_resource type="Script" path="res://Container.gd" id="5_xtsas"]
+[ext_resource type="Theme" uid="uid://delf0innikb3k" path="res://ui_themes/new_theme.tres" id="1_80olk"]
+[ext_resource type="Script" path="res://code/ui_container.gd" id="1_d25tj"]
+[ext_resource type="Script" path="res://code/ui.gd" id="3_nn576"]
+[ext_resource type="Theme" uid="uid://i0emvkjb5k7u" path="res://ui_themes/skill_container.tres" id="4_7nkud"]
+[ext_resource type="Script" path="res://code/score_text.gd" id="4_xul06"]
+[ext_resource type="Script" path="res://code/Container.gd" id="6_imtj1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g46e3"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -31,7 +31,7 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [node name="UI" type="CanvasLayer"]
-script = ExtResource("1_dyo2s")
+script = ExtResource("1_d25tj")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = 51.0
@@ -43,7 +43,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_g46e3")
 theme_override_styles/fill = SubResource("StyleBoxFlat_7epcc")
 value = 50.0
-script = ExtResource("1_mr17q")
+script = ExtResource("3_nn576")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 55.0
@@ -51,7 +51,7 @@ offset_top = 20.0
 offset_right = 189.0
 offset_bottom = 52.0
 text = "Score: 0"
-script = ExtResource("3_i7o8s")
+script = ExtResource("4_xul06")
 
 [node name="TalentBox" type="ColorRect" parent="."]
 unique_name_in_owner = true
@@ -70,7 +70,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("4_7nkud")
 color = Color(0, 0, 0, 0.584314)
-script = ExtResource("5_xtsas")
+script = ExtResource("6_imtj1")
 
 [node name="Talent1" type="Button" parent="TalentBox"]
 layout_mode = 2
