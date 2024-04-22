@@ -1,8 +1,8 @@
 extends Node
 
 
-var Zombie = load("res://zombie.tscn")
-var WeirdCrawler = load("res://weird_crawler.tscn")
+var Zombie = load("res://scenes/zombie.tscn")
+var WeirdCrawler = load("res://scenes/weird_crawler.tscn")
 
 var spawn_timer = 0
 var spawn_cooldown = 5
